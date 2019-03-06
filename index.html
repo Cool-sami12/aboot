@@ -14,9 +14,9 @@
 		</div>
 		<nav id="head">
 			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="" onclick="checkform()">SignIn</a> </li>
-				<li><a href="")>DashBoard</a></li>
+				
+				<li><a href="signin.html">SignIn</a> </li>
+				
 			</ul>
 		</nav>
 	</header>
@@ -25,8 +25,11 @@
 			<h2>WELCOME TO EPIC MAIL</h2>
 			<p class="par">If you are a new User,<br> Please kindly Sign Up,<br> If you are a Returning User<br> Kindly Sign In to view your mails. </p>
 		</div>
+		
 		<div id ="formbody">
+					
 					<h1>Register</h1>
+					<form>
 					<div>
 					<label for "firstname"> FirstName: </label>
 					<input id="fname" type="text" name="firstname" placeholder="Enter Your First Name" required>
@@ -45,8 +48,14 @@
 					Password: </label>
 					<input id="pass" type="password" name="password" required>
 					</div>
-					<div><button onclick="checkform()">Sign Up</button></div>
+					<div class="button">
+  					<button onsubmit="checkform()">Submit</button>
+						</div>
+					</form>
+
 		</div>
+					
+
 		
 	</div>
 	

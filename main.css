@@ -10,7 +10,8 @@ ul{
 
 }
 header{
-	background: #1565c0;
+
+	background-color: #7301ff;
 	color: #ffffff;
 	min-height: 70px;
 	border-bottom: #1565c0 2px solid; 
@@ -50,13 +51,9 @@ h2, h1{
 .par{
 	padding-left: 30px;
 }
-button{
-	color: #1565c0; 
-}
-
 #first{
-	background: #f1f1f1;
-	color:#1565c0;
+	background: #ffffff;
+	color: #7301ff;
 	min-height: 500px;
 
 }
@@ -69,22 +66,34 @@ button{
 }
 #fname, #lname{
 	width: 200px;
+	margin-bottom: 30px;
+	padding:10px;
 	margin-left: 30px;
+
+}
+.button{
+	margin-left: 54%;
+	color: #7301ff;
 }
 #em{
 	width: 200px;
 	margin-left: 55px;
+	margin-bottom: 30px;
+	padding:10px;
 }
 #pass{
 	width: 200px;
 	margin-left: 35px;
+	margin-bottom: 5px;
+	padding:10px;
 }
 #formbody{
 	padding:10px;
 	line-height: 2.0;
+	min-height: 400px;
 }
 footer{
-	background-color: #1565c0;
+	background-color:  #7301ff;
 	color: #ffffff;
 	height:50px;
 	text-align: center;
