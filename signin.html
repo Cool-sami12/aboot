@@ -15,26 +15,27 @@
 		<nav id="head">
 			<ul>
 				<li><a href="index.html">Home</a> </li>
-				<li class="active"><a href=""> SignIn</a></li>
-				<li><a href="dashboard.html"> DashBoard</a></li>
 			</ul>
 		</nav>
 	</header>
 	<div id="first">
 		<div class="innerbody">
-		<marquee>Welcome ....to .....Epic.... Mail........</marquee>
+		<h2>Welcome to Epic Mail </h2>
 		       <div class="body">
+		       	<form>
 					<h3>Sign In</h3>				
-					<div class="msg">
+					<div class="form-box">
 					<label>Email: </label>
-					<input id="txtemail" type="email" name="email" placeholder="Enter Your Email">
+					<input id="txtemail" type="email" name="email" placeholder="Enter Your Email" required>
 					</div>
-					<div class="pass">
+					<div class="form-box">
 					<label>Password: </label>
-					<input id="txtpass" type="password" name="password">
+					<input id="txtpass" type="password" name="password" placeholder="Enter Your Password" required>
 					</div>
-					<button onclick="checksign()">Sign In</button>
-					
+					<div class="form-box">
+					<button  onclick="checkSign()">Sign In</button>
+				</div>
+					</form>
 				</div>
 		</div>
 		

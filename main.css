@@ -11,10 +11,10 @@ ul{
 }
 header{
 
-	background-color: #7301ff;
+	background-color: #039be5;
 	color: #ffffff;
 	min-height: 70px;
-	border-bottom: #1565c0 2px solid; 
+	border-bottom: #039be5 2px solid; 
 	padding-top:20px; 
 
 }
@@ -41,6 +41,11 @@ header li{
 	padding: 0 20px;
 }
 
+header a:hover{
+	color: #0d47a1;
+	font-weight: bold;
+}
+
 header nav{
 	float: right;
 	margin-top:10px;
@@ -48,14 +53,10 @@ header nav{
 h2, h1{
 	margin:0;
 }
-.par{
-	padding-left: 30px;
-}
 #first{
 	background: #ffffff;
-	color: #7301ff;
+	color: #039be5;
 	min-height: 500px;
-
 }
 #innerbody{
 	float: left;
@@ -63,39 +64,71 @@ h2, h1{
 	font-size: 30px;
 	line-height: 1.5;
 	margin-left: 20px;
-}
-#fname, #lname{
-	width: 200px;
-	margin-bottom: 30px;
-	padding:10px;
-	margin-left: 30px;
-
-}
-.button{
-	margin-left: 54%;
-	color: #7301ff;
-}
-#em{
-	width: 200px;
-	margin-left: 55px;
-	margin-bottom: 30px;
-	padding:10px;
-}
-#pass{
-	width: 200px;
-	margin-left: 35px;
-	margin-bottom: 5px;
-	padding:10px;
-}
+		}
 #formbody{
 	padding:10px;
 	line-height: 2.0;
 	min-height: 400px;
 }
 footer{
-	background-color:  #7301ff;
+	background-color: #039be5;
 	color: #ffffff;
 	height:50px;
 	text-align: center;
 	padding: 10px;
+	display: flex;
+	justify-content: center;
+}
+.par{
+	display:flex;
+}
+.form-box{
+	display: flex;
+	flex-direction:column;
+	padding: 0.5rem 0;
+}
+.form-box label{
+	display: none;
+}
+.form-box input{
+	border-radius: 10px;
+}
+.form-box button{
+	background-color: #039be5;
+		border-radius: 10px;
+		color: #ffffff; 
+}
+input, label, button{
+	padding:0.2rem 1rem;	 
+}
+/*form-box and media queries
+
+*/
+@media all and (min-width: 500px){
+	.form-box label{
+		display: block;
+	}
+}
+
+
+@media all and (min-width: 600px){
+	.form-box{
+		flex-direction: row;
+	}
+	.form-box label{
+		flex-basis: 9rem;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+	.form-box textarea{
+		flex-basis: 0;
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
+
+	.form-box button{
+		margin-left: 11rem;
+		background-color: #039be5;
+		border-radius: 10px; 
+	}
 }

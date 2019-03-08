@@ -10,17 +10,17 @@ ul{
 
 }
 header{
-	background: #1565c0;
+	background: #039be5;
 	color: #ffffff;
 	min-height: 70px;
-	border-bottom: #1565c0 2px solid; 
+	border-bottom: #039be5 2px solid; 
 	padding-top:20px; 
+}
+h2{
+	margin:0;
+	padding:0;
+}
 
-}
-header .active a{
-	background-color: #0d47a1;
-	color: inherit;
-}
 #logo{
 	float: left;
 	margin: auto;
@@ -54,11 +54,13 @@ header a:hover{
 }
 .body{
 	margin:auto;
-	width: 400px;
+	width: 350px;
 	min-height: 200px;
 	border:2px #ffffff solid;
 	padding-left: 10px;
 	margin-top: 30px;
+	display: flex;
+
 
 }
 h3{ 
@@ -69,25 +71,30 @@ h3{
 }
 #first{
 	background: #f1f1f1;
-	color:#1565c0;
+	color:#039be5;
 	min-height: 500px;
 	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 }
 #txtemail{
-	width: 250px;
+	width: 210px;
 	min-height: 10px;
-	margin-left: 38px;
+	margin-left: 10px;
+
 }
 #txtpass{
-	width: 250px;
+	width: 210px;
 	min-height: 10px;
 	margin-left: 10px;
 }
 #btn{
-	color: #1565c0;
+	color:#039be5;
+	width: 250px;
 
-}
+}/*
 .msg{
 	padding-left: 5px;
 	padding-bottom: 20px;
@@ -96,11 +103,83 @@ h3{
 .pass{
 	padding-left: 5px;
 	padding-bottom: 20px;
-}
+}*/
 footer{
-	background-color: #1565c0;
+	background-color: #039be5;
 	color: #ffffff;
 	height:50px;
 	text-align: center;
 	padding: 10px;
+	display: flex;
+	justify-content: center;
+}
+.form-box{
+	display: flex;
+	flex-direction:column;
+	padding: 0.5rem 0;
+}
+.form-box label{
+	display: none;
+}
+.form-box input{
+	border-radius: 10px;
+}
+.form-box button{
+	background-color: #039be5;
+		border-radius: 10px;
+		color: #ffffff; 
+}
+input, label, button{
+	padding:0.2rem 1rem;	 
+}
+button{
+	width: 250px;
+	margin-left: 0.5rem;
+}
+h2{
+	
+	display: flex; 
+	justify-content: center;
+
+}
+
+/*form-box and media queries
+
+*/
+@media all and (min-width: 500px){
+	.form-box label{
+		display: block;
+	}
+
+	.form-box button{
+		margin-left: 9rem;
+		background-color: #039be5;
+		border-radius: 10px; 
+		width: 200px;
+		display: flex;
+	}
+}
+
+
+@media all and (min-width: 600px){
+	.form-box{
+		flex-direction: row;
+	}
+	.form-box label{
+		flex-basis: 5rem;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+
+	.form-box button{
+		margin-left: 7.7rem;
+		background-color: #039be5;
+		border-radius: 10px; 
+		width: 250px;
+		display: flex;
+	}
+	.body{
+		width: 400px;
+	}
+	
 }

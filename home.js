@@ -9,13 +9,13 @@ function checkform(){
 	 	location.href="signin.html";
 	 }
 }
+function checkSign(){
+	var em=document.getElementById('txtemail');
+	var ps=document.getElementById('txtpass');
+	if ( fn.value =="" | ln.value == "" || em.value == "" || ps.value == ""){
 
-function checksign(){
-	var em = document.getElementById('txtemail');
-	var ps = document.getElementById('txtpass');
-	if (em.value == "" || ps.value == ""){
-		alert("Enter your Email and Password")
-	} else {
+	} else{
 		location.href="dashboard.html";
 	}
+	
 }
