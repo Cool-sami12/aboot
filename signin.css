@@ -52,32 +52,22 @@ header a:hover{
 	color: #0d47a1;
 	font-weight: bold;
 }
-.body{
-	margin:auto;
-	width: 350px;
-	min-height: 200px;
-	border:2px #ffffff solid;
-	padding-left: 10px;
-	margin-top: 30px;
-	display: flex;
-
-
-}
-h3{ 
-	padding-left: 5px;
-	padding-top: 10px; 
-	margin: 0;
-	padding-bottom: 30px;
-}
 #first{
 	background: #f1f1f1;
 	color:#039be5;
-	min-height: 500px;
+	min-height: 400px;
 	font-size: 20px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+}
+.innerbody{
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
 
+}
+.body{
+	text-align: center;
 }
 #txtemail{
 	width: 210px;
@@ -90,20 +80,24 @@ h3{
 	min-height: 10px;
 	margin-left: 10px;
 }
-#btn{
-	color:#039be5;
-	width: 250px;
-
-}/*
-.msg{
-	padding-left: 5px;
-	padding-bottom: 20px;
-
+.form-box{
+	display: flex;
+	flex-direction:column;
+	padding: 0.5rem 0;
+	
 }
-.pass{
-	padding-left: 5px;
-	padding-bottom: 20px;
-}*/
+.form-box label{
+	display: none;
+}
+.form-box input{
+	border-radius: 10px;
+	padding:5px 0px 5px 5px;
+}
+.form-box button{
+	background-color: #039be5;
+		border-radius: 10px;
+		color: #ffffff; 
+}
 footer{
 	background-color: #039be5;
 	color: #ffffff;
@@ -113,73 +107,49 @@ footer{
 	display: flex;
 	justify-content: center;
 }
-.form-box{
-	display: flex;
-	flex-direction:column;
-	padding: 0.5rem 0;
-}
-.form-box label{
-	display: none;
-}
-.form-box input{
-	border-radius: 10px;
-}
-.form-box button{
-	background-color: #039be5;
-		border-radius: 10px;
-		color: #ffffff; 
-}
-input, label, button{
-	padding:0.2rem 1rem;	 
-}
-button{
-	width: 250px;
-	margin-left: 0.5rem;
-}
-h2{
-	
-	display: flex; 
-	justify-content: center;
 
-}
-
-/*form-box and media queries
-
-*/
-@media all and (min-width: 500px){
-	.form-box label{
-		display: block;
+	a{
+		color: #039be5;
 	}
 
-	.form-box button{
-		margin-left: 9rem;
-		background-color: #039be5;
-		border-radius: 10px; 
-		width: 200px;
-		display: flex;
-	}
-}
+@media only screen and (min-width: 600px){
+	.innerbody{
+		border:1px solid #039be5;
+		width: 450px;
+		border-radius: 8px;
+		margin: 0 auto;
+		box-sizing: inherit;
+		min-height: 0;
+		margin-top: 50px;
 
-
-@media all and (min-width: 600px){
-	.form-box{
-		flex-direction: row;
-	}
-	.form-box label{
-		flex-basis: 5rem;
-		flex-grow: 0;
-		flex-shrink: 0;
-	}
-
-	.form-box button{
-		margin-left: 7.7rem;
-		background-color: #039be5;
-		border-radius: 10px; 
-		width: 250px;
-		display: flex;
 	}
 	.body{
-		width: 400px;
+		padding: 10px 10px 20px 20px;
 	}
+	#txtemail{
+	width: 350px;
+	min-height: 10px;
 	
+
+	}
+#txtpass{
+	width: 350px;
+	min-height: 10px;
+	}
+
+	.form-box button{
+		width: 370px;
+	}
+	.form-box label{
+		display: flex;
+		margin-left: 10px;
+	}
+
+}
+@media only screen and (min-width: 1000px){
+	#first{
+		padding-bottom: 30px;
+	}
+
+
 }

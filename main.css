@@ -53,23 +53,23 @@ header nav{
 h2, h1{
 	margin:0;
 }
+
 #first{
 	background: #ffffff;
 	color: #039be5;
-	min-height: 500px;
+	min-height: 300px;
 }
 #innerbody{
-	float: left;
-	margin-right: 10%;
-	font-size: 30px;
-	line-height: 1.5;
-	margin-left: 20px;
-		}
-#formbody{
-	padding:10px;
-	line-height: 2.0;
-	min-height: 400px;
+	font-size: 20px;
+	margin: 10px 10px 10px 10px;	 
 }
+.par{
+	display: none;
+}
+.formbody{
+	margin:10px 10px 10px 10px;
+}
+
 footer{
 	background-color: #039be5;
 	color: #ffffff;
@@ -79,9 +79,7 @@ footer{
 	display: flex;
 	justify-content: center;
 }
-.par{
-	display:flex;
-}
+
 .form-box{
 	display: flex;
 	flex-direction:column;
@@ -101,34 +99,41 @@ footer{
 input, label, button{
 	padding:0.2rem 1rem;	 
 }
+
 /*form-box and media queries
 
 */
-@media all and (min-width: 500px){
+@media only screen and (min-width: 600px){
 	.form-box label{
 		display: block;
 	}
+	.par{
+	display: flex;
+	}
+	#first{
+		min-height: 400px;
+	}
 }
+@media only screen and (min-width: 1000px){
+	#innerbody{
+		width: 500px;
+		float: left;
+		padding:10px 5px 30px 30px;	
+		font-size: 24px;
+	}
+	.formbody{
+		width: 500px;
+		float: right;
+		padding:10px 5px 30px 30px;
+		margin-right: 30px;
 
-
-@media all and (min-width: 600px){
-	.form-box{
-		flex-direction: row;
 	}
-	.form-box label{
-		flex-basis: 9rem;
-		flex-grow: 0;
-		flex-shrink: 0;
-	}
-	.form-box textarea{
-		flex-basis: 0;
-		flex-grow: 1;
-		flex-shrink: 1;
+	.par{
+	font-size: 35px;
 	}
 
-	.form-box button{
-		margin-left: 11rem;
-		background-color: #039be5;
-		border-radius: 10px; 
+	#first{
+		min-height: 500px;
 	}
+
 }
