@@ -56,9 +56,8 @@ header nav{
 	overflow: hidden;
 	float: left;
 	background: #ffffff;
-	
-}
-.register{
+	}
+.login{
 	position: absolute;
 	overflow: hidden;
 	width: 100%;
@@ -70,16 +69,16 @@ header nav{
 	z-index: 1;
 	color: #ffffff;
 }
-.register form{
+.login form{
 	margin: 160px 30px;
 }
-.register h2{
+.login h2{
 	font-size: 30px;
 	color: #ffffff;
 	text-align: center;
 	
 }
-.register label{
+.login label{
 	display: block;
 	font-size: 18px;
 	font-weight: 700;
@@ -98,4 +97,13 @@ header nav{
 	 padding: 8px 0;
 	 width: 100%;
 	 color: #039be5;
+}
+footer{
+	background-color: #039be5;
+	color: #ffffff;
+	height:50px;
+	text-align: center;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
 }
